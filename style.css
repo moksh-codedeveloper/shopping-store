@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Sans+Mono:ital,wght@0,400..700;1,400..700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Ubuntu Sans Mono", monospace;
+}
+
+:root{
+    --main-color: #341f47;
+    --bg-colors: #efabff;
+    --text-colors: #eda2f2;
+    --snd-color: #54f2f2;
+    --tertiary-color: #0e6ba8;
+}
+
+header{
+    background-color: var(--snd-color);
+    color: var(--text-colors);
+    
+}
