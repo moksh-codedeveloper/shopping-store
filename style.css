@@ -4,6 +4,8 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Ubuntu Sans Mono", monospace;
+    text-decoration: none;
+    color: var(--text-colors);
 }
 
 :root{
@@ -17,5 +19,42 @@
 header{
     background-color: var(--snd-color);
     color: var(--text-colors);
-    
+    margin: 1rem;
+    padding: 1rem;
+    justify-content: center;
+    gap: 10rem;
+    height: 4rem;
+    align-items: center;
+    text-align: center;
+}
+
+.navbar{
+    padding: 0.6rem;
+    margin-bottom: 0.8rem;
+    margin-top: 0.2rem;
+    font-weight: 600;
+    font-size: 19px;
+}
+.button{
+    font-size: 19px;
+    font-weight: 700;
+    color: blue;
+}
+
+.button:hover{
+    color: var(--text-colors);
+    content: "";
+    transition: .1s ease-in-out;
+    transform: matrix(15px) 1s;
+    text-decoration: dashed;
+}
+
+.container{
+    margin-top: 6rem;
+    margin-bottom: 5rem;
+    padding-top: 5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 13px;
+    font-weight: 900;
 }
