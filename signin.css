@@ -58,3 +58,33 @@ main .signin-container  h1{
     text-align: center;
     background-color: var(--snd-bg-colors);
 }
+.signin-container #sign-in{
+    height: 3rem;
+    width: 6rem;
+    border-radius: 30px;
+    border: solid 0.2rem blue;
+    background-color: var(--snd-bg-colors);
+    color: var(--bg-color);
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.signin-container .sign-up-content input{
+    height: 2rem;
+    width: 10rem;
+    border-radius: 30px;
+    border: none;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--snd-bg-colors);
+    background-color: var(--text--color);
+}
+
+.sign-up-content input:hover{
+    background-color: var(--main-color);
+    box-shadow: 1px 1px 2px var(--snd-bg-colors);
+    transition: all .5s ease-in-out;
+    color: var(--text-color);
+    content: "";
+    transform: translate(2px);
+}
