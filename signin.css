@@ -7,35 +7,35 @@
 }
 
 :root{
-    --main-color: #A85CF9;
-    --bg-color: #5534A5;
-    --text--color: #4B7BE5;
-    --snd-bg-colors: #6FDFDF;
+    --snd-bg-colors: #093bf197;
+    --text-color: #2496e3f3;
+    --bg-color: #461ef5dc;
+    --main-color: #00A8CC;
 }
 body{
     background-color: var(--main-color);
-    color: var(--text--color);
+    color: var(--text-color);
 }
 .container{
-    justify-content: center;
-    /* text-align: center; */
+    justify-content: end;
     align-items: center;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    position: relative;
 }
 
 
 main{
     height: auto;
-    width: 100vw;
+    width: 60vw;
     margin: 1rem;
     padding: 1rem;
 }
-main .signin-container  h1{
+main .signin-container h1{
     font-size: 30px;
     font-weight: 900;
-    text-shadow: 3px 2px 2px var(--snd-bg-colors);
+    text-shadow: 3px 2px 1px var(--bg-color);
     margin-top: 1rem;
     margin-bottom: 2rem;
     margin-left: 0.1rem;
@@ -56,15 +56,13 @@ main .signin-container  h1{
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color: var(--snd-bg-colors);
 }
 .signin-container #sign-in{
     height: 3rem;
     width: 6rem;
     border-radius: 30px;
-    border: solid 0.2rem blue;
     background-color: var(--snd-bg-colors);
-    color: var(--bg-color);
+    color: var(--text-color);
     font-size: 16px;
     font-weight: 800;
 }
@@ -76,15 +74,39 @@ main .signin-container  h1{
     border: none;
     font-size: 14px;
     font-weight: 600;
-    color: var(--snd-bg-colors);
-    background-color: var(--text--color);
+    color: var(--text-color);
+    background-color: var(--bg-color);
 }
 
 .sign-up-content input:hover{
-    background-color: var(--main-color);
-    box-shadow: 1px 1px 2px var(--snd-bg-colors);
+    box-shadow: 1px 4px 2px var(--bg-color);
+    background-color: var(--text-color);
     transition: all .5s ease-in-out;
-    color: var(--text-color);
+    color: var(--snd-bg-colors);
     content: "";
     transform: translate(2px);
+}
+
+#sign-in:hover{
+    background-color: var(--text-color);
+    color: var(--snd-bg-colors);
+    content: icon;
+    transition: all 1s ease-in;
+    transform: translateY(-1px);
+}
+
+.signin-complete{
+    height: 90px;
+    /* width: 90px; */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin-top: 10rem;
+    position: absolute;
+    background-color: var(--snd-bg-colors);
+}
+
+.hide{
+    display: none;
+    
 }
