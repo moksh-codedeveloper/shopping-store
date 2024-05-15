@@ -96,7 +96,7 @@ main .signin-container h1{
 }
 
 .signin-complete{
-    height: 90px;
+    height: 9rem;
     /* width: 90px; */
     display: flex;
     flex-direction: column;
@@ -104,9 +104,34 @@ main .signin-container h1{
     margin-top: 10rem;
     position: absolute;
     background-color: var(--snd-bg-colors);
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 1rem;
 }
-
+/* 
 .hide{
     display: none;
     
+} */
+
+.back-btn{
+    height: 6rem;
+    width: 5rem;
+    margin: 1rem;
+    border-radius: 10px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    text-decoration: none;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+.back-btn:hover{
+    content: "";
+    transition: all 1s ease;
+    transform: translate(1px);
+    background-color: var(--text-color);
+    color: var(--bg-color);
 }
