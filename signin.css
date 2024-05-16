@@ -98,7 +98,7 @@ main .signin-container h1{
 .signin-complete{
     height: 9rem;
     /* width: 90px; */
-    display: flex;
+    display: none;
     flex-direction: column;
     flex-wrap: nowrap;
     margin-top: 10rem;
@@ -109,11 +109,7 @@ main .signin-container h1{
     align-items: center;
     padding: 1rem;
 }
-/* 
-.hide{
-    display: none;
-    
-} */
+
 
 .back-btn{
     height: 6rem;
